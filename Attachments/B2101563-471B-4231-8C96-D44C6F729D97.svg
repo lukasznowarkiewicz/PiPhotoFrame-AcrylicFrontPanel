@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="401" height="235" viewBox="0 0 401 235">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#010101"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+
+    <linearGradient id="panelBase" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c0d10"/>
+      <stop offset="35%" stop-color="#060709"/>
+      <stop offset="100%" stop-color="#010101"/>
+    </linearGradient>
+
+    <radialGradient id="leftBloom" cx="0.12" cy="0.16" r="0.9">
+      <stop offset="0%" stop-color="#6e7481" stop-opacity="0.36"/>
+      <stop offset="25%" stop-color="#3c4350" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#11151d" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="lowerLeftBloom" cx="0.14" cy="0.72" r="0.85">
+      <stop offset="0%" stop-color="#2f3540" stop-opacity="0.10"/>
+      <stop offset="45%" stop-color="#10141b" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="panelEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5f646c" stop-opacity="0.72"/>
+      <stop offset="8%" stop-color="#181a1f" stop-opacity="0.95"/>
+      <stop offset="92%" stop-color="#15171b" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#60656d" stop-opacity="0.65"/>
+    </linearGradient>
+
+    <linearGradient id="innerEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8f96a1" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#060709" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <linearGradient id="screenEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#525760" stop-opacity="0.68"/>
+      <stop offset="100%" stop-color="#1a1d22" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="baseGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a2f37"/>
+      <stop offset="18%" stop-color="#13161b"/>
+      <stop offset="60%" stop-color="#050607"/>
+      <stop offset="100%" stop-color="#0a0c10"/>
+    </linearGradient>
+
+    <linearGradient id="baseStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#515761"/>
+      <stop offset="100%" stop-color="#070809"/>
+    </linearGradient>
+
+    <filter id="panelGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+
+    <filter id="iconGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.6"/>
+    </filter>
+
+    <clipPath id="panelClip">
+      <rect x="14" y="18" width="367" height="198" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <rect width="401" height="235" fill="url(#bgGrad)"/>
+
+  <g>
+    <rect x="14" y="18" width="367" height="198" rx="8" fill="url(#panelBase)" stroke="url(#panelEdge)" stroke-width="1.1"/>
+    <rect x="15.8" y="19.8" width="363.4" height="194.4" rx="7" fill="none" stroke="url(#innerEdge)" stroke-width="0.9" opacity="0.82"/>
+    <g clip-path="url(#panelClip)">
+      <rect x="14" y="18" width="367" height="198" fill="url(#leftBloom)"/>
+      <rect x="14" y="18" width="367" height="198" fill="url(#lowerLeftBloom)"/>
+      <path d="M176 18 L235 18 L194 113 L139 113 Z" fill="#ffffff" opacity="0.05"/>
+      <path d="M178 18 L225 18 L197 87 L158 87 Z" fill="#ffffff" opacity="0.025"/>
+      <ellipse cx="76" cy="79" rx="96" ry="88" fill="#8891a1" opacity="0.045"/>
+      <rect x="46" y="44" width="259" height="130" fill="none" stroke="url(#screenEdge)" stroke-width="0.95" opacity="0.82"/>
+      <rect x="47" y="45" width="257" height="128" fill="none" stroke="#0a0b0d" stroke-width="0.7" opacity="0.9"/>
+      <path d="M21 26 H374" stroke="#eef2ff" stroke-opacity="0.05"/>
+      <path d="M21 212 H374" stroke="#eef2ff" stroke-opacity="0.04"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="14" y="221" width="367" height="14" rx="3.5" fill="url(#baseGrad)" stroke="url(#baseStroke)" stroke-width="0.7"/>
+    <rect x="21" y="222" width="353" height="1.1" rx="0.55" fill="#777f8d" opacity="0.14"/>
+  </g>
+
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" filter="url(#iconGlow)" opacity="0.92">
+    <g transform="translate(338 40)" stroke-width="2.5">
+      <path d="M2.5 8.2 10 2l7.5 6.2v10H4V8.2"/>
+      <path d="M6.4 18.2V11h7.2v7.2"/>
+    </g>
+    <g transform="translate(338 78)" stroke-width="2.5">
+      <path d="M18 3 8 11l10 8"/>
+      <path d="M8.5 11H20"/>
+    </g>
+    <g transform="translate(338 111)" stroke-width="2.5">
+      <path d="M2.8 4 15 12 2.8 20Z" fill="#ffffff"/>
+      <path d="M20 6v12"/>
+    </g>
+    <g transform="translate(337 147)" stroke-width="2.4">
+      <path d="M2.8 4 12.5 12 2.8 20"/>
+      <path d="M10.4 4 20.2 12l-9.8 8"/>
+      <path d="M21.5 6v12"/>
+    </g>
+    <g transform="translate(338 173)" stroke-width="2.3">
+      <circle cx="9.5" cy="18.5" r="5.8"/>
+      <path d="M9.5 5.8v3.4M9.5 27.8v3.4M22.2 18.5h-3.4M0.2 18.5h3.4M18.6 9.4l-2.4 2.4M2.8 25.2l2.4-2.4M18.6 27.6l-2.4-2.4M2.8 11.8l2.4 2.4"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#f8f8f8" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(338 40)" stroke-width="1.8">
+      <path d="M2.5 8.2 10 2l7.5 6.2v10H4V8.2"/>
+      <path d="M6.4 18.2V11h7.2v7.2"/>
+    </g>
+    <g transform="translate(338 78)" stroke-width="1.8">
+      <path d="M18 3 8 11l10 8"/>
+      <path d="M8.5 11H20"/>
+    </g>
+    <g transform="translate(338 111)" stroke-width="1.8">
+      <path d="M2.8 4 15 12 2.8 20Z" fill="#f8f8f8" stroke="#f8f8f8"/>
+      <path d="M20 6v12"/>
+    </g>
+    <g transform="translate(337 147)" stroke-width="1.75">
+      <path d="M2.8 4 12.5 12 2.8 20"/>
+      <path d="M10.4 4 20.2 12l-9.8 8"/>
+      <path d="M21.5 6v12"/>
+    </g>
+    <g transform="translate(338 173)" stroke-width="1.65">
+      <circle cx="9.5" cy="18.5" r="5.8"/>
+      <path d="M9.5 5.8v3.4M9.5 27.8v3.4M22.2 18.5h-3.4M0.2 18.5h3.4M18.6 9.4l-2.4 2.4M2.8 25.2l2.4-2.4M18.6 27.6l-2.4-2.4M2.8 11.8l2.4 2.4"/>
+    </g>
+  </g>
+</svg>
